@@ -206,10 +206,8 @@ margin-left: 1rem; }
 															.main-content table th,
 															.main-content table td {
 																padding: 0.5rem 1rem;
-
-    list-style:disc inside;
-    padding:0 0 0 14px;
-    margin:0;					
+														    padding:0 10px 0 10px;
+														    margin:0;					
 															}
 															.main-content dl {
 															padding: 0; }
@@ -247,4 +245,6 @@ margin-left: 1rem; }
 																		font-weight: bold; }
 
 																		.site-footer-credits {
-																		color: #819198; }
+																			text-align:center;
+																			color: #819198; 
+																		}
