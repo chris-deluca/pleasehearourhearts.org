@@ -178,16 +178,11 @@
 					//Create a HTML Table element.
 					var table = document.createElement("table");
 
-					var kid = 0;
 					//Add the data rows.
-					for (var z = 0; z < (kids.length / DetectMobile()); z++) {
+					for (var z = 0; z < kids.length; z++) {
 						var row = table.insertRow(-1);
-					  for (var j = 0; j < DetectMobile(); j++) {
-					    var cell = row.insertCell(-1);
-					    if (kid < kids.length) {
-					    	cell.innerHTML = kids[kid++];
-					    }
-					  }
+				    var cell = row.insertCell(-1);
+			    	cell.innerHTML = kids[z];				  
 					}
 
 					var dvTable = document.getElementById("dvTable");
