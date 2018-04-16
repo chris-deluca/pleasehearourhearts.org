@@ -129,9 +129,11 @@
 					kids.push(["Mickey DuBois"]);
 					kids.push(["Molly Magistad"]);
 					kids.push(["Monte Menzel"]);
+					kids.push(["Naomi A Bishop"]);
 					kids.push(["Naomi Gunn"]);
 					kids.push(["Nate Barton"]);
 					kids.push(["Nina Todd (Lembo)"]);
+					kids.push(["Patrick Fuhrman"]);
 					kids.push(["Rachel Motland Goodman"]);
 					kids.push(["Rachel Zoda"]);
 					kids.push(["Rebecca Darling (Lockrem)"]);
@@ -178,9 +180,9 @@
 
 					var kid = 0;
 					//Add the data rows.
-					for (var z = 0; z < (kids.length / 4); z++) {
+					for (var z = 0; z < (kids.length / DetectMobile()); z++) {
 						var row = table.insertRow(-1);
-					  for (var j = 0; j < 4; j++) {
+					  for (var j = 0; j < DetectMobile(); j++) {
 					    var cell = row.insertCell(-1);
 					    if (kid < kids.length) {
 					    	cell.innerHTML = kids[kid++];
@@ -193,6 +195,22 @@
 					dvTable.innerHTML = "";
 					dvTable.appendChild(table);
 			}
+			
+			function DetectMobile() { 
+			 if( navigator.userAgent.match(/Android/i)
+			  || navigator.userAgent.match(/webOS/i)
+			  || navigator.userAgent.match(/iPhone/i)
+			  || navigator.userAgent.match(/iPad/i)
+			  || navigator.userAgent.match(/iPod/i)
+			  || navigator.userAgent.match(/BlackBerry/i)
+			  || navigator.userAgent.match(/Windows Phone/i)
+			 ) {
+			    return 1;
+			 }
+			 else {
+			    return 4;
+			  }
+			}			
 		</script>
 
     <section class="page-header">
