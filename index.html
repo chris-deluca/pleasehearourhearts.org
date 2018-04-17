@@ -10,208 +10,53 @@
     <link rel="stylesheet" href="css/cayman.css">
   </head>
   <body onload="GenerateTable()">
-  	<script type="text/javascript" src="data.json"></script>
 		<script type="text/javascript">
 			function GenerateTable() {
-			    var kids = new Array();
-					kids.push(["Abigail Faylor"]);
-					kids.push(["Alison Clark (Alison Dahlin)"]);
-					kids.push(["Amie Heasley"]);
-					kids.push(["Amy Morris Mittelstaedt"]);
-					kids.push(["Andrea Martin"]);
-					kids.push(["Andrea Scantlin (Bowker)"]);
-					kids.push(["Angela Estabrook"]);
-					kids.push(["Angelica Aguirre (Bowker)"]);
-					kids.push(["Angelo Lowrie"]);
-					kids.push(["Anna Hamill"]);
-					kids.push(["Anna Panasiuk"]);
-					kids.push(["Annie Garrelts (Cobb)"]);
-					kids.push(["April J. Robertson (April Grefthen Robertson)"]);
-					kids.push(["Barbie Yokers"]);
-					kids.push(["Becky Alberts Burnham"]);
-					kids.push(["Bekki Stice (Hanson)"]);
-					kids.push(["Bliss Reese (Menzel)"]);
-					kids.push(["Brandi Babcock"]);
-					kids.push(["Brenda Rice Frank"]);
-					kids.push(["Brian Briggs"]);
-					kids.push(["Camille Wagner (Moore)"]);
-					kids.push(["Carly Rose-Fufa"]);
-					kids.push(["Carrie (Bergin) Fenner"]);
-					kids.push(["Casey Colbern"]);
-					kids.push(["Casey Faylor"]);
-					kids.push(["Cate Deluca (Marce Weidner)"]);
-					kids.push(["Celeste Casello"]);
-					kids.push(["Chani Hayes"]);
-					kids.push(["Charlene Morgan"]);
-					kids.push(["Chelsea Shaw"]);
-					kids.push(["Chris Deluca"]);
-					kids.push(["Chris Ellis"]);
-					kids.push(["Christopher Gran"]);
-					kids.push(["Christopher Metcalfe"]);
-					kids.push(["Christy Anderson"]);
-					kids.push(["Crystal Campbell (Connon)"]);
-					kids.push(["Crystal Kollias (Sanger)"]);
-					kids.push(["D-Ann Weller Ross"]);
-					kids.push(["Dan Schmidt"]);
-					kids.push(["Dana Larsson (Lowrie)"]);
-					kids.push(["Danielle Haviland"]);
-					kids.push(["Danielle Weller-Roche"]);
-					kids.push(["Darcy Drake Gildon"]);
-					kids.push(["David Hicks"]);
-					kids.push(["David Lister"]);
-					kids.push(["Dawn Gaylor"]);
-					kids.push(["Deanna Goble"]);
-					kids.push(["Deborah Vasey"]);
-					kids.push(["Dr. Kristine Mensonides Gritter"]);
-					kids.push(["Emma (Jemima) Skjonsby"]);
-					kids.push(["Eric Jenott"]);
-					kids.push(["Erik Willis"]);
-					kids.push(["Erika Bandy"]);
-					kids.push(["Erin Elise (Willis) Lister"]);
-					kids.push(["Esteven Falcon Hayes (Steve Hayes)"]);
-					kids.push(["Frank R Austin"]);
-					kids.push(["Gabe Colbern"]);
-					kids.push(["Geoff Ping"]);
-					kids.push(["Glen White"]);
-					kids.push(["Greg Heasley"]);
-					kids.push(["Greta Guenther"]);
-					kids.push(["Heather Slaminski"]);
-					kids.push(["Hillary Dawn McElvain"]);
-					kids.push(["Ian Frank"]);
-					kids.push(["Israel Jeremiah Gamache"]);
-					kids.push(["Jackson Brady DuBois"]);
-					kids.push(["James Ochs Jr."]);
-					kids.push(["James Standridge"]);
-					kids.push(["Jamie Koppang"]);
-					kids.push(["Janna Wiley"]);
-					kids.push(["Jason Benson"]);
-					kids.push(["Jason Lister"]);
-					kids.push(["Jason Webb"]);
-					kids.push(["Jeffery Lufkin"]);
-					kids.push(["Jennifer A Hieb (Konopka)"]);
-					kids.push(["Jennifer Russell"]);
-					kids.push(["Jennifer Withrow"]);
-					kids.push(["Jeremy Cameron"]);
-					kids.push(["Jesse Aaron Sanger"]);
-					kids.push(["Jessica Brown (St.Laurent)"]);
-					kids.push(["Jessica (Jessie) Case"]);
-					kids.push(["Jessica Kolla (Dowling)"]);
-					kids.push(["Jessie (Meyer) Williams"]);
-					kids.push(["Jillian Wittman"]);
-					kids.push(["Joan Sackett"]);
-					kids.push(["Joe Fiene"]);
-					kids.push(["Joe Miller"]);
-					kids.push(["Joel Mensonides"]);
-					kids.push(["Johanne Patterson"]);
-					kids.push(["John Emory"]);
-					kids.push(["Jonny Price"]);
-					kids.push(["Julene Connon"]);
-					kids.push(["Julie Yokers White"]);
-					kids.push(["Karen Alberts"]);
-					kids.push(["Karen Steinhauer"]);
-					kids.push(["Kathleen Ochs (Marian Hicks)"]);
-					kids.push(["Kay-C Hayden"]);
-					kids.push(["Kelly L. Rumsey"]);
-					kids.push(["Kerry Annette Wade"]);
-					kids.push(["Krista Love"]);
-					kids.push(["Kriste (Hanson) Solomon"]);
-					kids.push(["Kristina Solheim"]);
-					kids.push(["Krysti Mecham (Lockrem)"]);
-					kids.push(["Laura Bell"]);
-					kids.push(["Laura Lepeska"]);
-					kids.push(["Leah Perez Rixmann"]);
-					kids.push(["Lenette Feighner"]);
-					kids.push(["Linda Ridley (Hicks)"]);
-					kids.push(["Lisa Dandurand Davis"]);
-					kids.push(["Lisa J. Yokers"]);
-					kids.push(["Logan Jenott"]);
-					kids.push(["Lori Alberts"]);
-					kids.push(["Lori Baxter (Perez)"]);
-					kids.push(["Luke Meier"]);
-					kids.push(["Lydia Ashman (Yokers)"]);
-					kids.push(["Lyndsay Burley (Lyndsay Shaw)"]);
-					kids.push(["Mariam Burkett (Jackson)"]);
-					kids.push(["Mary G."]);
-					kids.push(["Matt Eldridge"]);
-					kids.push(["Melissa Davidson (Benson)"]);
-					kids.push(["Micah Averiett (Heil)"]);
-					kids.push(["Micah J McMonagle (Gibson)"]);
-					kids.push(["Micah Knox"]);
-					kids.push(["Michael Hansen"]);
-					kids.push(["Michael Maurice"]);
-					kids.push(["Michele Cruzat"]);
-					kids.push(["Michele Prevette"]);
-					kids.push(["Michelle Lowrie Griffith"]);
-					kids.push(["Mickey DuBois"]);
-					kids.push(["Molly Magistad"]);
-					kids.push(["Monte Menzel"]);
-					kids.push(["Naomi A Bishop"]);
-					kids.push(["Naomi Gunn"]);
-					kids.push(["Nate Barton"]);
-					kids.push(["Nicole Salazar"]);
-					kids.push(["Nina Todd (Lembo)"]);
-					kids.push(["Patrick Fuhrman"]);
-					kids.push(["Pete Avis"]);
-					kids.push(["Rachel Motland Goodman"]);
-					kids.push(["Rachel Zoda (Fuhrman)"]);
-					kids.push(["Rebecca Darling (Lockrem)"]);
-					kids.push(["Rebekah Gibson Schoeppel"]);
-					kids.push(["Rebekah Schwartz (Becky Schwartz)"]);
-					kids.push(["Romy Godfrey Martin"]);
-					kids.push(["Sam Marmon"]);
-					kids.push(["Samuel (Sam Kitchell) Forbes-Roberts"]);
-					kids.push(["Samuel Vert"]);
-					kids.push(["Sandy Leyde"]);
-					kids.push(["Sara Thompson Semingson"]);
-					kids.push(["Sarah Dowling-Rapacz"]);
-					kids.push(["Sarah Markham"]);
-					kids.push(["Sarah Schmidt"]);
-					kids.push(["Shannon Beck (Shannon Shaw)"]);
-					kids.push(["Shauna Lofgren-Desjardins"]);
-					kids.push(["Shawna Heflen"]);
-					kids.push(["Sheila Yokers"]);
-					kids.push(["Sheri Larsen (Gifford)"]);
-					kids.push(["Sonja Yokers"]);
-					kids.push(["Stacie Cruzat"]);
-					kids.push(["Stephanie Connon"]);
-					kids.push(["Steve Weidner"]);
-					kids.push(["Susannah Hanley"]);
-					kids.push(["Susannah Karlsson"]);
-					kids.push(["Tamara Walker"]);
-					kids.push(["Tami Brown Vondran"]);
-					kids.push(["Tamis Nelson"]);
-					kids.push(["Tanya Frank McDonald"]);
-					kids.push(["Taunya Ward"]);
-					kids.push(["Teresa Fothergill Emery"]);
-					kids.push(["Timothy Austin"]);
-					kids.push(["Timothy Drake"]);
-					kids.push(["Tiny / Teggy Benson"]);
-					kids.push(["Tracie Walters (Tyree)"]);
-					kids.push(["Trisha Smith"]);
-					kids.push(["Troy Hicks"]);
-					kids.push(["Wade J. Sackett"]);
-					kids.push(["Wendy Kitchell"]);
-					kids.push(["Zack Karlsson"]);
-
-					//Create a HTML Table element.
-					var table = document.createElement("table");
-
-					//Add the data rows.
-					for (var z = 0; z < kids.length; z++) {
+				//Create a HTML Table element.
+				var table = document.createElement("table");					
+				// Read the kid data
+				readTextFile("kids.json", function(text){
+					// parse the data
+				  var data = JSON.parse(text);
+				  // Sort the data
+				  data.kids.sort();
+				  //Add the data rows.
+					for (var i = 0; i < data.kids.length; i++) {
 						var row = table.insertRow(-1);
 				    var cell = row.insertCell(-1);
-			    	cell.innerHTML = kids[z];
+			    	cell.innerHTML = data.kids[i];
 					}
-
-					var dvTable = document.getElementById("dvTable");
-
-					dvTable.innerHTML = "";
-					dvTable.appendChild(table);
+				});				
+				// Locate the div
+				var dvTable = document.getElementById("dvTable");
+				// Clear then add the data to the div
+				dvTable.innerHTML = "";
+				dvTable.appendChild(table);
 			}
+			
+			function readTextFile(file, callback) {
+				var rawFile = new XMLHttpRequest();
+				rawFile.overrideMimeType("application/json");
+				rawFile.open("GET", file, true);
+				rawFile.onreadystatechange = function() {
+				  if (rawFile.readyState === 4 && rawFile.status == "200") {
+				      callback(rawFile.responseText);
+				  }
+				}
+				rawFile.send(null);
+			}	
 		</script>
 
     <section class="page-header">
       <h2 class="project-name">Please Hear Our Hearts</h2>
+    </section>
+    
+    <section class="menu">
+			<ul>
+			  <li><a href="index.html">Statement</a></li>
+			  <li><a href="response.html">Responses</a></li>
+			  <li><a href="contact.html">Contact Us</a></li>
+			</ul>
     </section>
 
     <section class="main-content">
