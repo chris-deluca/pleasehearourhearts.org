@@ -66,11 +66,6 @@
     background-color: #159957;
 }
 
-
-
-
-
-
  @media screen and (min-width: 64em) {
      .btn {
          padding: 0.75rem 1rem;
@@ -266,7 +261,7 @@
      margin-bottom: 0;
 }
  .main-content table {
-     display: block;
+ 		 table-layout:fixed;
      width: 100%;
      overflow: auto;
      word-break: normal;
