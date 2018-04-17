@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/cayman.css">
   </head>
   <body onload="GenerateTable()">
+  	<script type="text/javascript" src="data.json"></script>
 		<script type="text/javascript">
 			function GenerateTable() {
 			    var kids = new Array();
@@ -27,6 +28,7 @@
 					kids.push(["Annie Garrelts (Cobb)"]);
 					kids.push(["April J. Robertson (April Grefthen Robertson)"]);
 					kids.push(["Barbie Yokers"]);
+					kids.push(["Becky Alberts Burnham"]);
 					kids.push(["Bekki Stice (Hanson)"]);
 					kids.push(["Bliss Reese (Menzel)"]);
 					kids.push(["Brandi Babcock"]);
@@ -35,7 +37,7 @@
 					kids.push(["Camille Wagner (Moore)"]);
 					kids.push(["Carly Rose-Fufa"]);
 					kids.push(["Carrie (Bergin) Fenner"]);
-					kids.push(["Casey Colbern"]);	
+					kids.push(["Casey Colbern"]);
 					kids.push(["Casey Faylor"]);
 					kids.push(["Cate Deluca (Marce Weidner)"]);
 					kids.push(["Celeste Casello"]);
@@ -68,12 +70,14 @@
 					kids.push(["Erin Elise (Willis) Lister"]);
 					kids.push(["Esteven Falcon Hayes (Steve Hayes)"]);
 					kids.push(["Frank R Austin"]);
+					kids.push(["Gabe Colbern"]);
 					kids.push(["Geoff Ping"]);
 					kids.push(["Glen White"]);
 					kids.push(["Greg Heasley"]);
 					kids.push(["Greta Guenther"]);
 					kids.push(["Heather Slaminski"]);
 					kids.push(["Hillary Dawn McElvain"]);
+					kids.push(["Ian Frank"]);
 					kids.push(["Israel Jeremiah Gamache"]);
 					kids.push(["Jackson Brady DuBois"]);
 					kids.push(["James Ochs Jr."]);
@@ -82,6 +86,7 @@
 					kids.push(["Janna Wiley"]);
 					kids.push(["Jason Benson"]);
 					kids.push(["Jason Lister"]);
+					kids.push(["Jason Webb"]);
 					kids.push(["Jeffery Lufkin"]);
 					kids.push(["Jennifer A Hieb (Konopka)"]);
 					kids.push(["Jennifer Russell"]);
@@ -95,6 +100,7 @@
 					kids.push(["Jillian Wittman"]);
 					kids.push(["Joan Sackett"]);
 					kids.push(["Joe Fiene"]);
+					kids.push(["Joe Miller"]);
 					kids.push(["Joel Mensonides"]);
 					kids.push(["Johanne Patterson"]);
 					kids.push(["John Emory"]);
@@ -123,6 +129,7 @@
 					kids.push(["Lori Baxter (Perez)"]);
 					kids.push(["Luke Meier"]);
 					kids.push(["Lydia Ashman (Yokers)"]);
+					kids.push(["Lyndsay Burley (Lyndsay Shaw)"]);
 					kids.push(["Mariam Burkett (Jackson)"]);
 					kids.push(["Mary G."]);
 					kids.push(["Matt Eldridge"]);
@@ -144,6 +151,7 @@
 					kids.push(["Nicole Salazar"]);
 					kids.push(["Nina Todd (Lembo)"]);
 					kids.push(["Patrick Fuhrman"]);
+					kids.push(["Pete Avis"]);
 					kids.push(["Rachel Motland Goodman"]);
 					kids.push(["Rachel Zoda (Fuhrman)"]);
 					kids.push(["Rebecca Darling (Lockrem)"]);
@@ -183,7 +191,7 @@
 					kids.push(["Troy Hicks"]);
 					kids.push(["Wade J. Sackett"]);
 					kids.push(["Wendy Kitchell"]);
-					kids.push(["Zack Karlsson"]);				
+					kids.push(["Zack Karlsson"]);
 
 					//Create a HTML Table element.
 					var table = document.createElement("table");
@@ -192,14 +200,14 @@
 					for (var z = 0; z < kids.length; z++) {
 						var row = table.insertRow(-1);
 				    var cell = row.insertCell(-1);
-			    	cell.innerHTML = kids[z];				  
+			    	cell.innerHTML = kids[z];
 					}
 
 					var dvTable = document.getElementById("dvTable");
 
 					dvTable.innerHTML = "";
 					dvTable.appendChild(table);
-			}	
+			}
 		</script>
 
     <section class="page-header">
@@ -279,8 +287,8 @@
 			<div id="dvTable"></div>
 			<hr/>
 			<p style="text-align:center">Download a copy of this document in PDF format <a href="Statement.pdf">here</a>.</p>
-			
-	    <footer class="site-footer">   	
+
+	    <footer class="site-footer">
 	      <span class="site-footer-credits">
 	      	<div>This page was created and is owned by the children and former students of Community Chapel Christian School.</div>
 	      	<div>© 2018 PleaseHearOurHearts.org - All Rights Reserved.</div>
